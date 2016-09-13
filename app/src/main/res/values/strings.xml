@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Offer Wall Testing</string>
+
+    <string name="hint_uid">uid</string>
+    <string name="hint_api_key">API Key</string>
+    <string name="hint_appid">appid</string>
+    <string name="hint_pub0">pub0</string>
+
+    <string name="err_msg_uid">Enter the uid</string>
+    <string name="err_msg_api_key">Enter the API Key</string>
+    <string name="err_msg_appid">Enter the appid</string>
+    <string name="err_msg_pub0">Enter the pub0</string>
+
+    <string name="btn_submit">Submit</string>
+
+    <string name="menu_load_defaults">Load Defaults</string>
+
+    <string name="lbl_progress">Loading. Please wait...</string>
+
+    <string name="err_msg_failed_to_load">Offer data failed to load</string>
+    <string name="err_msg_invalid_signature">Response signature is not valid</string>
+    <string name="err_msg_no_offers">No offers</string>
+</resources>

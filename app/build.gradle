@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.fyber.ads.ofw.testing"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven {
+        name "Fyber's maven repo"
+        url "https://fyber.bintray.com/maven"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Google & Android
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.google.android.gms:play-services-ads:9.0.0'
+
+    // External Libraries
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.github.bumptech.glide:volley-integration:1.4.0'
+
+    // 3rd Party Ads
+    compile 'com.fyber:fyber-sdk:8.4.2'
+
+    // Tests
+    testCompile 'junit:junit:4.12'
+}
